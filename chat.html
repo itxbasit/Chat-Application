@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.min.js"
+        integrity="sha512-42PE0rd+wZ2hNXftlM78BSehIGzezNeQuzihiBCvUEB3CVxHvsShF86wBWwQORNxNINlBPuq7rG4WWhNiTVHFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row chat-container">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="user-profile-chat" src="images/user.png" alt="" id="user-profile-header">
+                        <h4 id="name-header"></h4>
+                        <span id="email-header"></span>
+                    </div>
+                </div>
+                <div>
+                    <div class="card group-list">
+                        <div class="card-body">
+                            <label for="" id="group">
+                                <i class="fa fa-group group-icon" style="font-size:20px"></i>
+                                <h5 id="name-header">Create Group</h5>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-for-usersgroups">
+                    <ul class="list-group users-list" id="group-list">
+
+                    </ul>
+                    <ul class="list-group users-list" id="chat-list">
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                <div style="display: none;" id="chatContainer">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img class="user-profile-chat me-4" src="images/user.png" alt=""
+                                    id="selected-user-profile">
+                                <div>
+                                    <h4 class="m-0" id="selectedfullName"></h4>
+                                    <span id="selectedEmail"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="chat-box" class="chat-box">
+
+                            </div>
+                            <input id="message-input" class="form-control" type="text" placeholder="Enter your message">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: none;" id="groupChatContainer">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <img class="user-profile-chat me-4" src="images/user.png" alt=""
+                                    id="selected-group-profile">
+                                <div>
+                                    <h4 class="m-0" id="groupName"></h4>
+                                    <span id="adminName"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div id="group-chat-box" class="chat-box">
+
+                            </div>
+                            <input id="group-message-input" class="form-control" type="text"
+                                placeholder="Enter your message">
+                        </div>
+                    </div>
+                </div>
+                <div id="group-info" class="group-info" style="display: none;">
+                    <div class="d-flex justify-content-between">
+                        <h4>Group Info</h4>
+                    </div>
+                    <div class="user-img">
+                        <img id="group-profile" src="./images/user.png" alt="">
+                        <label class="camera-icon" for="file-input">
+                            <i class="bi bi-camera-fill">
+                                <input id="file-input" style="display: none;" type="file">
+                            </i>
+                        </label>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Admin name</label>
+                        <input type="text" class="form-control" id="admin-name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputName" class="form-label">Group name</label>
+                        <input type="text" class="form-control" id="group-name">
+                    </div>
+                    <div class="d-grid">
+                        <button id="create-group" type="submit" class="btn btn-primary ">Create Group</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

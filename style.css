@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(1000deg, #267bc5 20%, #5dd193 90%);
+}
+
+.change-color {
+    color: white;
+    background-color: black;
+}
+
+.chat-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.user-img img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.user-img {
+    width: 100px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.camera-icon {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+
+#log-out {
+    border: 1px solid red;
+}
+
+#log-out:hover {
+    background-color: red;
+}
+
+.chat-container {
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
+}
+
+.message-box {
+    width: 45%;
+    background-color: #d8dadb;
+    padding: 10px;
+    color: #667682;
+    border-radius: 5px;
+}
+
+.users-list,
+.group-list {
+    margin: 20px 0px;
+}
+
+.right-message {
+    background-color: #6daad7;
+    color: #141414;
+    margin-left: auto;
+}
+
+.chat-box {
+    padding: 10px;
+    height: 400px;
+    overflow: auto;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.chat-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.chat-icon:active {
+    opacity: 0.5;
+}
+
+.user-profile-chat {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #6daad7;
+}
+
+.user-email {
+    font-size: 14px;
+}
+
+.message-box>span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.user-container {
+    position: relative;
+}
+
+.group-icon {
+    padding: 10px;
+    background-color: #5dd193;
+    border-radius: 50%;
+    font-size: 60px
+}
+
+#group {
+    cursor: pointer;
+    display: flex;
+}
+
+#group h5 {
+    margin: 8px 20px;
+}
+
+.group-list {
+    cursor: pointer;
+}
+
+.group-list:hover {
+    background-color: #6daad7;
+}
+.group-info{
+    margin: 40px 150px;
+    border: 1px solid black;
+    padding: 50px;
+    border-radius: 10px;
+}
+.list-for-usersgroups{
+    padding: 12px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+@media screen and (min-width: 480px) {
+    .group-info{
+        margin: 40px 50px;
+    }
+  }
